@@ -5,6 +5,7 @@ import 'package:ecommerce/core/localisation/changelocal.dart';
 import 'package:ecommerce/core/localisation/translation.dart';
 import 'package:ecommerce/core/services/services.dart';
 import 'package:ecommerce/routes.dart';
+import 'package:ecommerce/test.dart';
 import 'package:ecommerce/view/screen/language.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -42,10 +43,13 @@ class MyApp extends StatelessWidget {
                 height: 2,
                 color: ColorApp.grey,
                 fontWeight: FontWeight.bold,
-                fontSize: 12)),
+                fontSize: 14),
+            bodyText2:
+                const TextStyle(height: 2, color: ColorApp.grey, fontSize: 12)),
         primarySwatch: Colors.blue,
       ),
       home: const Language(),
+      //home: Test(),
       routes: routes,
     );
   }
